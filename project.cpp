@@ -6,9 +6,6 @@
 // NO <vector>, NO <unordered_map>, NO <queue> (for heap)
 using namespace std;
 
-/* ===========================================
-                 TEAM CLASS
-   =========================================== */
 class Team {
 public:
     string name;
@@ -27,9 +24,6 @@ public:
     }
 };
 
-/* ===========================================
-           LINKED LIST (Team Storage)
-   =========================================== */
 struct Node {
     Team data;
     Node* next;
@@ -90,9 +84,7 @@ public:
     }
 };
 
-/* ===========================================
-             HASH TABLE (Team Lookup)
-   =========================================== */
+
 // Using an array of linked lists for collision handling. O(1) average lookup.
 class TeamHashTable {
 private:
@@ -164,9 +156,6 @@ public:
     }
 };
 
-/* ===========================================
-                    QUEUE (Match Queue)
-   =========================================== */
 class Queue {
 public:
     struct QNode {
@@ -203,9 +192,7 @@ public:
     }
 };
 
-/* ===========================================
-         STACK FOR UNDO LAST MATCH
-   =========================================== */
+
 class Stack {
 public:
     struct SNode {
@@ -238,9 +225,7 @@ public:
     }
 };
 
-/* ===========================================
-                    BST (Results)
-   =========================================== */
+
 class BST {
 public:
     struct BNode {
@@ -284,9 +269,7 @@ public:
     }
 };
 
-/* ===========================================
-             MAX HEAP (Team Seeding)
-   =========================================== */
+
 class MaxHeap {
 private:
     Team* heapArr;
@@ -344,9 +327,7 @@ public:
     }
 };
 
-/* ===========================================
-           GRAPH (Performance Tracking)
-   =========================================== */
+
 class Graph {
 private:
     struct DefeatNode {
@@ -492,9 +473,7 @@ public:
     }
 };
 
-/* ===========================================
-         TOURNAMENT TREE (Placeholder)
-   =========================================== */
+
 class TournamentTree {
 public:
     struct TNode {
@@ -515,9 +494,7 @@ public:
     }
 };
 
-/* ===========================================
-              MERGE SORT (O(n log n))
-   =========================================== */
+
 void merge(Team arr[], int l, int m, int r) {
     int i, j, k;
     int n1 = m - l + 1;
@@ -558,9 +535,6 @@ void mergeSort(Team arr[], int l, int r) {
 }
 
 
-/* ===========================================
-           TOURNAMENT CONTROLLER
-   =========================================== */
 class Tournament {
 public:
     LinkedList teamsLL; 
@@ -866,12 +840,7 @@ public:
     }
 };
 
-/* ===========================================
-                    MAIN
-   =========================================== */
-/* ===========================================
-                    MAIN
-   =========================================== */
+
 int main() {
     srand(time(0));
 
@@ -957,4 +926,5 @@ int main() {
     }
 
     return 0;
+
 }
